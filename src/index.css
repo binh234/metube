@@ -9,9 +9,15 @@ a {
   text-decoration: none;
 }
 
+/* Set the width and color of the scrollbar track */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 8px;
   height: 5px;
+}
+
+/* Set the width and color of the scrollbar thumb */
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -20,8 +26,13 @@ a {
   height: 200px;
 }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
+/* Change the appearance of the scrollbar when hovering over it */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #505050;
+}
+
+.no-scrollbar-y::-webkit-scrollbar {
+  width: 0;
 }
 
 .flex-center {
@@ -82,6 +93,18 @@ a {
   background: linear-gradient(90deg, rgba(0,238,247,1) 0%, rgba(63,216,231,1) 1%, rgba(248,0,255,1) 89%);
   z-index: 10;
   height: 300px;
+}
+
+.playlist-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.playlist-banner {
+  background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,84,253,1) 100%)
 }
 
 @media screen and (max-width: 900px) {

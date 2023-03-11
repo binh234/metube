@@ -4,6 +4,8 @@ A Youtube clone application consisting of stunning video sections, custom catego
 
 **Frontend**: ReactJS, React Hooks, MUI 5, RapidAPI
 
+###[Live Demo here](https://metube-animate.netlify.app/)
+
 <p align="center">
     <img src = "demo/homepage.png" alt="homepage">
     <br />
@@ -16,9 +18,22 @@ A Youtube clone application consisting of stunning video sections, custom catego
 ## Project Overview
 Images available in `demo` folder
 
-Channel Page | Video Page |
------------- | ---------- |
-![Channel Page](demo/channel-page.png) | ![Video page](demo/video-page.png) |
+![Channel Page](demo/channel-page.png)
+![Video page](demo/video-page.png)
+
+<details>
+    <summary>Show more</summary>
+    <img src="demo/comments.png" alt="mobile">
+    <img src="demo/lazy_loading.png" alt="mobile">
+</details>
+
+<details>
+    <summary>Mobile</summary>
+    <img src="demo/mobile.png" alt="mobile">
+    <img src="demo/mobile_dark.png" alt="mobile">
+    <img src="demo/mobile_channel.png" alt="mobile">
+    <img src="demo/mobile_dark_player.png" alt="mobile">
+</details>
 
 # Features
 - [x] Diffrent video categories
@@ -28,16 +43,16 @@ Channel Page | Video Page |
 - [x] Channel detail page
 - [x] Light/Dark mode
 - [x] Mobile responsive
+- [x] Display video comments
+- [x] Lazy loading
+- [x] Infinite scrolling
 - [ ] Playlist detail page
-- [ ] Display video comments
-- [ ] Lazy loading
 
 ## Quickstart with Docker
 ```bash
 docker build -t metube .
 docker run -p 3000:3000 -d metube
 ```
-Or try it online here: [MeTube](https://animated-tanuki-9d8b63.netlify.app/)
 
 ## Available Scripts
 
